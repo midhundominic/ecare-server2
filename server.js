@@ -7,9 +7,7 @@ require('dotenv').config();
 const app = express();
 
 // Enable CORS for all routes
-app.use(cors({
-  origin: ['https://majestic-lokum-9a90dc.netlify.app'], // Include your Netlify URLs or use '*' to allow all
-}));
+app.use(cors([]));
 
 // Middleware
 app.use(express.json()); // Parse JSON bodies
